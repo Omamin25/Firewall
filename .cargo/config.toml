@@ -1,0 +1,4 @@
+# WinDivert ships no crates.io-installable binaries: `windivert-sys` locates the
+# vendored dll/lib/sys through this variable at build time (see `library_docs.md` §4).
+[env]
+WINDIVERT_PATH = { value = "vendor/windivert/WinDivert-2.2.2-A/x64", relative = true }

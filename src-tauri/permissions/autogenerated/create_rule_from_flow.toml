@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-create-rule-from-flow"
+description = "Enables the create_rule_from_flow command without any pre-configured scope."
+commands.allow = ["create_rule_from_flow"]
+
+[[permission]]
+identifier = "deny-create-rule-from-flow"
+description = "Denies the create_rule_from_flow command without any pre-configured scope."
+commands.deny = ["create_rule_from_flow"]

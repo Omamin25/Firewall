@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-subscribe-packet-stream"
+description = "Enables the subscribe_packet_stream command without any pre-configured scope."
+commands.allow = ["subscribe_packet_stream"]
+
+[[permission]]
+identifier = "deny-subscribe-packet-stream"
+description = "Denies the subscribe_packet_stream command without any pre-configured scope."
+commands.deny = ["subscribe_packet_stream"]

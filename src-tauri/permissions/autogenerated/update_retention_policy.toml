@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-update-retention-policy"
+description = "Enables the update_retention_policy command without any pre-configured scope."
+commands.allow = ["update_retention_policy"]
+
+[[permission]]
+identifier = "deny-update-retention-policy"
+description = "Denies the update_retention_policy command without any pre-configured scope."
+commands.deny = ["update_retention_policy"]

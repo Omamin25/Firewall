@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Cognton",
+  "version": "0.1.0",
+  "identifier": "com.cognton.firewall",
+  "build": { "beforeDevCommand": "npm run dev", "devUrl": "http://localhost:1420", "beforeBuildCommand": "npm run build", "frontendDist": "../dist" },
+  "app": { "windows": [{ "label": "main", "title": "Cognton", "width": 1280, "height": 800, "minWidth": 960, "minHeight": 640, "resizable": true }] },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.ico"],
+    "resources": {
+      "../vendor/windivert/WinDivert-2.2.2-A/x64/WinDivert.dll": "",
+      "../vendor/windivert/WinDivert-2.2.2-A/x64/WinDivert64.sys": ""
+    },
+    "publisher": "Cognton",
+    "shortDescription": "Performant Windows Firewall with Process & User Attribution"
+  }
+}

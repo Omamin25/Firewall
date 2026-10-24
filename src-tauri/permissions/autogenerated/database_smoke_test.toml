@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-database-smoke-test"
+description = "Enables the database_smoke_test command without any pre-configured scope."
+commands.allow = ["database_smoke_test"]
+
+[[permission]]
+identifier = "deny-database-smoke-test"
+description = "Denies the database_smoke_test command without any pre-configured scope."
+commands.deny = ["database_smoke_test"]

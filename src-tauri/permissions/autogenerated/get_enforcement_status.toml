@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-get-enforcement-status"
+description = "Enables the get_enforcement_status command without any pre-configured scope."
+commands.allow = ["get_enforcement_status"]
+
+[[permission]]
+identifier = "deny-get-enforcement-status"
+description = "Denies the get_enforcement_status command without any pre-configured scope."
+commands.deny = ["get_enforcement_status"]

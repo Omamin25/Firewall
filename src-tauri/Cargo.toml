@@ -1,0 +1,50 @@
+[package]
+name = "cognton"
+version = "0.1.0"
+description = "A local Windows firewall and network inspector"
+authors = ["Cognton"]
+edition = "2021"
+
+[lib]
+name = "cognton_lib"
+crate-type = ["lib"]
+
+[[bin]]
+name = "cognton"
+path = "src/main.rs"
+test = false
+
+[build-dependencies]
+tauri-build = { version = "2.5", features = [] }
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+crossbeam-channel = "0.5"
+dirs = "5.0"
+etherparse = "0.21"
+libc = "0.2"
+pcap = "2"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "2.9", features = [] }
+thiserror = "2.0"
+# Pinned exactly: the crate is pre-1.0 and its own README warns that any version
+# change below 1.0.0 may break the API.
+windivert = "=0.7.0-beta.4"
+tracing = "0.1"
+tracing-appender = "0.2"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_Networking_WinSock",
+    "Win32_Security",
+    "Win32_Security_Authorization",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+    "Win32_UI_Shell",
+] }
+
+[dev-dependencies]
+tempfile = "3.14"

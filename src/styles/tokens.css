@@ -1,0 +1,22 @@
+:root {
+  --background: 0 0% 100%; --surface: 0 0% 98%; --surface-muted: 0 0% 96%; --foreground: 0 0% 9%; --foreground-muted: 0 0% 40%; --foreground-subtle: 0 0% 44%; --border: 0 0% 92%; --border-strong: 0 0% 85%; --ring: 0 0% 9%;
+  --primary: 220 90% 56%; --primary-foreground: 0 0% 100%; --secondary: 0 0% 9%; --secondary-foreground: 0 0% 100%; --accent: 270 70% 60%;
+  --success: 142 71% 45%; --success-foreground: 0 0% 100%; --warning: 38 92% 50%; --warning-foreground: 0 0% 9%; --danger: 0 72% 51%; --danger-foreground: 0 0% 100%; --info: 199 89% 48%; --proto-dns: 199 89% 48%; --proto-http: 38 92% 50%; --proto-tls: 142 71% 45%; --proto-quic: 270 70% 60%; --proto-icmp: 0 0% 45%; --proto-other: 0 0% 65%;
+  /* Ink-on-tint and chart-mark pairs — see ui_tokens.md §1.1. */
+  --primary-strong: 220 90% 48%; --success-strong: 142 71% 27%; --warning-strong: 38 92% 30%; --danger-strong: 0 72% 44%; --proto-dns-strong: 199 89% 32%; --proto-http-strong: 38 92% 30%; --proto-tls-strong: 142 71% 27%; --proto-quic-strong: 270 70% 53%; --proto-icmp-strong: 0 0% 39%; --proto-other-strong: 0 0% 41%;
+  --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05); --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.08); --radius: 0.5rem;
+  /* Scrollbars — see ui_tokens.md §7. Neutral greys of their own because they are chrome,
+     not content: the thumb has to clear 3:1 as a UI mark on every surface it crosses. */
+  --scrollbar-size: 12px; --scrollbar-thumb-inset: 3px;
+  --scrollbar-thumb: 0 0% 52%; --scrollbar-thumb-hover: 0 0% 35%;
+}
+.dark {
+  --background: 0 0% 4%; --surface: 0 0% 7%; --surface-muted: 0 0% 10%; --foreground: 0 0% 98%; --foreground-muted: 0 0% 63%; --foreground-subtle: 0 0% 51%; --border: 0 0% 15%; --border-strong: 0 0% 22%; --ring: 0 0% 83%;
+  --primary: 213 94% 68%; --primary-foreground: 0 0% 4%; --secondary: 0 0% 98%; --secondary-foreground: 0 0% 9%; --accent: 270 75% 70%;
+  --success: 142 69% 58%; --warning: 38 92% 60%; --danger: 0 72% 62%; --danger-foreground: 0 0% 9%; --info: 199 89% 60%; --proto-dns: 199 89% 60%; --proto-http: 38 92% 62%; --proto-tls: 142 69% 58%; --proto-quic: 270 75% 72%; --proto-icmp: 0 0% 60%; --proto-other: 0 0% 45%;
+  /* Dark surfaces are generous enough that most pairs are the base value. */
+  --primary-strong: 213 94% 68%; --success-strong: 142 69% 58%; --warning-strong: 38 92% 60%; --danger-strong: 0 72% 64%; --proto-dns-strong: 199 89% 60%; --proto-http-strong: 38 92% 62%; --proto-tls-strong: 142 69% 58%; --proto-quic-strong: 270 75% 72%; --proto-icmp-strong: 0 0% 60%; --proto-other-strong: 0 0% 54%;
+  --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.4); --shadow-md: 0 4px 16px -2px hsl(0 0% 0% / 0.5);
+  /* Lighter than `border-strong` (1.6:1 here) so the thumb is findable on near-black. */
+  --scrollbar-thumb: 0 0% 45%; --scrollbar-thumb-hover: 0 0% 60%;
+}

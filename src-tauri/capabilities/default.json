@@ -1,0 +1,30 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Minimal permissions for Cognton's main window.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "allow-demo-health-check",
+    "allow-database-smoke-test",
+    "allow-list-capture-interfaces",
+    "allow-start-capture",
+    "allow-stop-capture",
+    "allow-get-packet-detail",
+    "allow-subscribe-packet-stream",
+    "allow-list-flows",
+    "allow-get-flow-history-summary",
+    "allow-list-rules",
+    "allow-create-rule",
+    "allow-update-rule",
+    "allow-toggle-rule",
+    "allow-delete-rule",
+    "allow-draft-rule-from-flow",
+    "allow-draft-rule-from-packet",
+    "allow-create-rule-from-flow",
+    "allow-get-enforcement-status",
+    "allow-update-retention-policy",
+    "allow-prune-flow-history",
+    "allow-get-system-health"
+  ]
+}

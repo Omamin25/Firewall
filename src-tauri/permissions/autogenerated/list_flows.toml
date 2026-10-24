@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-list-flows"
+description = "Enables the list_flows command without any pre-configured scope."
+commands.allow = ["list_flows"]
+
+[[permission]]
+identifier = "deny-list-flows"
+description = "Denies the list_flows command without any pre-configured scope."
+commands.deny = ["list_flows"]

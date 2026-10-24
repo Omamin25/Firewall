@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-draft-rule-from-packet"
+description = "Enables the draft_rule_from_packet command without any pre-configured scope."
+commands.allow = ["draft_rule_from_packet"]
+
+[[permission]]
+identifier = "deny-draft-rule-from-packet"
+description = "Denies the draft_rule_from_packet command without any pre-configured scope."
+commands.deny = ["draft_rule_from_packet"]
