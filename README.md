@@ -264,6 +264,4 @@ Before using it in a sensitive environment:
 - Use elevated privileges only when necessary.
 - Review the original project's license and security implications before redistribution.
 
-The privacy statements in this README describe the intended design and should be verified against the actual implementation.
-
 
